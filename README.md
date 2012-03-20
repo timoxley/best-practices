@@ -14,7 +14,39 @@ Source: https://twitter.com/#!/avdi/status/180747721852985344
 * If the implementation is easy to explain, it may be a good idea.
 
 Source: The Zen of Python: http://www.python.org/dev/peps/pep-0020/
-(shortlist + title from http://pyvideo.org/video/880/stop-writing-classes)
+(shortlist + title from Jack Diederich of http://pyvideo.org/video/880/stop-writing-classes)
+
+## Don't Write Code
+
+Don’t write code (write new code only when everything else fails) is the single most important lesson every developer needs to learn. The amount of duplicate, crappy code (across projects) that exists today is overwhelming. In a lot of cases developers don’t even bother to look around. They just want to write code.
+
+Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
+
+Reducing the amount of code in your product should be a goal.
+
+"I hate code, and I want as little of it as possible in our product." - Jack Diederich
+
+
+## Refactoring > Rewriting
+
+#### Common Excuses For A Software Rewrite
+1. The Code Sucks
+2. "We're So Much Smarter Now"
+3. We Picked The Wrong Platform/Language
+
+#### Why Rewriting Is (Almost) Never A Good Idea
+
+1. It Will Take Longer Than You Think
+2. Markets Change
+2. Existing Customers Become Frustrated
+3. Refactoring Can Cleanup The Code
+4. You Don't Control The Rewrite, It Controls You
+
+http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx
+
+## Rewriting > Patching
+If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
+
 
 ## Write unit tests.
 Every programmer knows they should write tests for
@@ -42,7 +74,6 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 * Adding or using an initialization block 
 
 ### Flaw #2: Digging into Collaborators
-#### Warning Signs
 * Objects are passed in but never used directly (only used to get access to other objects)
 * Law of Demeter violation: method call chain walks an object graph with more than one dot (.) 
 * Suspicious names: context, environment, principal, container, or manager
@@ -71,12 +102,6 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 ## Avoid mixing Object Creation with Application Logic
 
 http://misko.hevery.com/2008/09/30/2008/07/08/how-to-think-about-the-new-operator/
-
-## Don't Write Code
-
-Don’t write code (write new code only when everything else fails) is the single most important lesson every developer needs to learn. The amount of duplicate, crappy code (across projects) that exists today is overwhelming. In a lot of cases developers don’t even bother to look around. They just want to write code.
-
-Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
 
 ## Avoid Code Smells
 
@@ -112,27 +137,6 @@ and few calculations to defeat: how much more no calculation at all! It is by at
 #### "Plans are worthless, planning is invaluable."- Sir Winston Churchill
 
 For this to work, everyone involved has to listen, everyone has to be open, everyone has to be responsive. Or we could keep flailing away with the fucked up attitude that “it has to be this way” because the sacred project plan says it’s this way. Because that really is a lot of fun, isn’t it?
-
-
-## Refactoring > Rewriting
-
-#### Common Excuses For A Software Rewrite
-1. The Code Sucks
-2. "We're So Much Smarter Now"
-3. We Picked The Wrong Platform/Language
-
-#### Why Rewriting Is (Almost) Never A Good Idea
-
-1. It Will Take Longer Than You Think
-2. Markets Change
-2. Existing Customers Become Frustrated
-3. Refactoring Can Cleanup The Code
-4. You Don't Control The Rewrite, It Controls You
-
-http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx
-
-## Rewriting > Patching
-If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
 
 ## Programming is also Teaching your team
 ... a team of mediocre, inexperienced coders who work together and write for the benefit of the team has the capability to become a great team, and they can take that learning approach to create other great teams. *It all comes down to whether the team sees its work as simply writing code... or writing with the goal of both code and learning*" 
