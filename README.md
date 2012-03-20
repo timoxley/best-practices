@@ -4,6 +4,8 @@ When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use 
 
 Source: https://twitter.com/#!/avdi/status/180747721852985344
 
+## Don't do hard things, do easy things.
+
 * Simple is better than complex.
 * Complex is better than complicated.
 * Flat is better than nested.
@@ -12,7 +14,7 @@ Source: https://twitter.com/#!/avdi/status/180747721852985344
 * If the implementation is easy to explain, it may be a good idea.
 
 Source: The Zen of Python: http://www.python.org/dev/peps/pep-0020/
-(shortlist from http://pyvideo.org/video/880/stop-writing-classes)
+(shortlist + title from http://pyvideo.org/video/880/stop-writing-classes)
 
 ## Write unit tests.
 Every programmer knows they should write tests for
