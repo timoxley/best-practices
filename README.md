@@ -22,10 +22,16 @@ Don’t write code (write new code only when everything else fails) is the singl
 
 Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
 
-Reducing the amount of code in your product should be a goal.
+#### Reducing the amount of code in your product should be a goal.
 
 "I hate code, and I want as little of it as possible in our product." - Jack Diederich
 
+## Stop Writing Classes
+
+The signature of "this shouldn't be a class" is when the class has two methods, and one of them is the constructor. 
+Any time you see these signs, you probably should have just written a function.
+
+Source: Jack Diederich, Stop Writing Classes http://pyvideo.org/video/880/stop-writing-classes
 
 ## Refactoring > Rewriting
 
