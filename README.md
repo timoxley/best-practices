@@ -53,6 +53,11 @@ http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Yo
 ## Rewriting > Patching
 If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
 
+## Refining existing features > Adding new features.
+
+The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
+
+Source: Tim Anderson "Making better software: forget new features, just do the same stuff better" http://www.itjoblog.co.uk/2011/06/making-better-software.html
 
 ## Write unit tests.
 Every programmer knows they should write tests for
