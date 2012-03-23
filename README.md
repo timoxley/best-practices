@@ -1,6 +1,10 @@
 # Programming Best Practices Tidbits
 ### A Collection of quotes and paraphrases for developers from around the web.
 
+* * *
+
+## Quality Matters
+
 When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use anymore because they gradually lost the ability to iterate.
 
 Source: https://twitter.com/#!/avdi/status/180747721852985344
