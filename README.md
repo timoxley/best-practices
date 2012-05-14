@@ -3,6 +3,20 @@
 
 * * *
 
+## Follow the principles of X
+
+In 1984, Bob Scheifler and Jim Gettys set out the early principles of X:
+
+   * Do not add new functionality unless an implementor cannot complete a real application without it.
+   * It is as important to decide what a system is not as to decide what it is. Do not serve all the world's needs; rather, make the system extensible so that additional needs can be met in an upwardly compatible fashion.
+   * The only thing worse than generalizing from one example is generalizing from no examples at all.
+   * If a problem is not completely understood, it is probably best to provide no solution at all.
+   * If you can get 90 percent of the desired effect for 10 percent of the work, use the simpler solution. (See also Worse is better.)
+   * Isolate complexity as much as possible.
+   * Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
+   
+The first principle was modified during the design of X11 to: "Do not add new functionality unless you know of some real application that will require it."
+
 ## Quality Matters
 
 When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use anymore because they gradually lost the ability to iterate.
