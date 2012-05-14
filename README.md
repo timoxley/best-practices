@@ -17,6 +17,8 @@ In 1984, Bob Scheifler and Jim Gettys set out the early principles of X:
    
 The first principle was modified during the design of X11 to: "Do not add new functionality unless you know of some real application that will require it."
 
+Source: http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles
+
 ## Quality Matters
 
 When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use anymore because they gradually lost the ability to iterate.
