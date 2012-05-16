@@ -203,5 +203,6 @@ Source: Uncle Bob Martin "Screaming Architecture" http://blog.8thlight.com/uncle
 
 ##It always takes longer than you think
 Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+
 — Douglas Hofstadter, Gödel, Escher, Bach: An Eternal Golden Braid http://en.wikipedia.org/wiki/Hofstadter's_law
 
