@@ -3,6 +3,21 @@
 
 * * *
 
+## Never build Large Apps
+
+The secret to building large apps is never build large apps. Break your applications into small pieces. Then, assemble those testable, bite-sized pieces into your big application.
+
+Source: Justin Meyer, author JavaScriptMVC http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html
+
+## Accept that you have no idea how this will grow
+
+The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
+
+Source: Nicholas Zakas, author 'High-performance JavaScript websites' http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html
+
+Acknowledgement: 
+http://addyosmani.com/largescalejavascript/
+
 ## Follow the principles of X
 
 In 1984, Bob Scheifler and Jim Gettys set out the early principles of X:
