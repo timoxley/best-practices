@@ -111,16 +111,17 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 ## To write effective unit tests, you need to write testable code
 
 ### Flaw #1: Constructor does Real Work
-####Warning Signs
+#### Warning Signs
 * new keyword in a constructor or at field declaration
 * Static method calls in a constructor or at field declaration
 * Anything more than field assignment in constructors
 * Object not fully initialized after the constructor finishes (watch out forinitialize methods)
 * Control flow (conditional or looping logic) in a constructor
 * Code does complex object graph construction inside a constructor rather than using a factory or builder
-* Adding or using an initialization block 
+* Adding or using an initialization block
 
 ### Flaw #2: Digging into Collaborators
+#### Warning Signs
 * Objects are passed in but never used directly (only used to get access to other objects)
 * Law of Demeter violation: method call chain walks an object graph with more than one dot (.) 
 * Suspicious names: context, environment, principal, container, or manager
@@ -131,8 +132,8 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 * Adding or using static fields or static methods Adding or using static initialization blocks Adding or using registries
 * Adding or using service locators
 
-###Flaw #4: Class Does Too Much
-####Warning Signs
+### Flaw #4: Class Does Too Much
+#### Warning Signs
 
 * Summing up what the class does includes the word “and”
 * Class would be challenging for new team members to read and quickly “get it” Class has fields that are only used in some methods
