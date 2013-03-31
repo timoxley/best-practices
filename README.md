@@ -128,7 +128,9 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 ### Flaw #3: Brittle Global State & Singletons
 #### Warning Signs
 * Adding or using singletons
-* Adding or using static fields or static methods Adding or using static initialization blocks Adding or using registries
+* Adding or using static fields or static methods
+* Adding or using static initialization blocks
+* Adding or using registries
 * Adding or using service locators
 
 ###Flaw #4: Class Does Too Much
