@@ -137,7 +137,8 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 ####Warning Signs
 
 * Summing up what the class does includes the word “and”
-* Class would be challenging for new team members to read and quickly “get it” Class has fields that are only used in some methods
+* Class would be challenging for new team members to read and quickly “get it”
+* Class has fields that are only used in some methods
 * Class has static methods that only operate on parameters
 
 Source: http://misko.hevery.com/code-reviewers-guide/
