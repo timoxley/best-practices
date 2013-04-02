@@ -58,15 +58,12 @@ Don’t write code (write new code only when everything else fails) is the singl
 
 Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
 
-## Reinvent the Wheel
-Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one. [Source](http://nodejs.debuggable.com/2011-02-26.txt)
-
-#### Keep Lean Dependencies
-The old adage "don't reinvent the wheel" doesn't apply when the wheel comes attached to a locomotive engine. [Source](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
-
 #### Reducing the amount of code in your product should be a goal.
 
 "I hate code, and I want as little of it as possible in our product." - Jack Diederich
+
+#### Keep Lean Dependencies
+The old adage "don't reinvent the wheel" doesn't apply when the wheel comes attached to a locomotive engine. [Source](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
 
 ## Stop Writing Classes
 
@@ -74,6 +71,9 @@ The signature of "this shouldn't be a class" is when the class has two methods, 
 Any time you see these signs, you probably should have just written a function.
 
 Source: Jack Diederich, Stop Writing Classes http://pyvideo.org/video/880/stop-writing-classes
+
+## Reinvent the Wheel
+Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one. [Source](http://nodejs.debuggable.com/2011-02-26.txt)
 
 ## Refactoring > Rewriting
 
