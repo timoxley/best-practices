@@ -10,13 +10,15 @@ Use your own judgment in their application[.](http://www.reddit.com/r/programmin
 The secret to building large apps is never build large apps. Break your applications into small pieces. Then, assemble those testable, bite-sized pieces into your big application.
 
 – Justin Meyer, author JavaScript MVC
+
 [Source](http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html)
 
 ## Accept that you have no idea how this will grow
 
 The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
 
-– Nicholas Zakas, author 'High-performance JavaScript websites'
+– Nicholas Zakas, author "High-performance JavaScript websites"
+
 [Source](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
 
 [Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
@@ -43,6 +45,7 @@ The first principle was modified during the design of X11 to: "Do not add new fu
 When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use anymore because they gradually lost the ability to iterate.
 
 – Avdi Grimm
+
 [Source](https://twitter.com/#!/avdi/status/180747721852985344)
 
 ## Don't do hard things, do easy things.
@@ -55,7 +58,9 @@ When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use 
 * If the implementation is easy to explain, it may be a good idea.
 
 – The Zen of Python
+
 [Source](http://www.python.org/dev/peps/pep-0020/)
+
 Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
 
 ## Don't Write Code
@@ -82,6 +87,7 @@ The signature of "this shouldn't be a class" is when the class has two methods, 
 Any time you see these signs, you probably should have just written a function.
 
 – Jack Diederich
+
 [Source](http://pyvideo.org/video/880/stop-writing-classes)
 
 ## Reinvent the Wheel
@@ -114,6 +120,7 @@ If you are changing more than 25% of a class or method, consider simply rewritin
 The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
 
 – Tim Anderson
+
 [Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
 ## Write unit tests.
@@ -164,6 +171,7 @@ makes a big difference.
 * Class has static methods that only operate on parameters
 
 [Source](http://misko.hevery.com/code-reviewers-guide/)
+
 [Source](http://misko.hevery.com/presentations/)
 
 ## Test-Driven Development with Inversion of Control.
@@ -210,6 +218,7 @@ For this to work, everyone involved has to listen, everyone has to be open, ever
 (Emphasis mine)
 
 – Reginald Braithwaite
+
 [Source](http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam)
 
 ### "The most important element of successful software development is learning."
@@ -261,5 +270,5 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 * Rule of Extensibility: Design for the future, because it will be here sooner than you think.
 
 – Eric S. Raymond, "The Art of Unix Programming"
-[Source](http://www.catb.org/esr/writings/taoup/html/ch01s06.html
-)
+
+[Source](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
