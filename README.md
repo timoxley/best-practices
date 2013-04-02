@@ -78,13 +78,13 @@ Source: Jack Diederich, Stop Writing Classes http://pyvideo.org/video/880/stop-w
 
 #### Why Rewriting Is (Almost) Never A Good Idea
 
-1. It Will Take Longer Than You Think
+1. [It Always Takes Longer Than You Expect](http://en.wikipedia.org/wiki/Hofstadter's_law)
 2. Markets Change
 2. Existing Customers Become Frustrated
 3. Refactoring Can Cleanup The Code
 4. You Don't Control The Rewrite, It Controls You
 
-http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx
+Source: http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx
 
 ## Rewriting > Patching
 If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
@@ -242,3 +242,4 @@ Source: Uncle Bob Martin "Screaming Architecture" http://blog.8thlight.com/uncle
 * Rule of Extensibility: Design for the future, because it will be here sooner than you think.
 
 Source: Eric S. Raymond "The Art of Unix Programming" http://www.catb.org/esr/writings/taoup/html/ch01s06.html
+
