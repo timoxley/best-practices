@@ -9,13 +9,13 @@ El secreto para construir aplicaciones grandes es nunca construir aplicaciones g
 
 Fuente: Justin Meyer, autor de *JavaScriptMVC* http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html
 
-## Accept that you have no idea how this will grow
+## Acepta que no tienes idea de cómo esto va a crecer
 
-The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
+La clave es reconocer desde el principio que no tienes idea de cómo esto va a crecer. Cuando aceptes que no lo sabes todo, empezarás a diseñar el sistema defensivamente... Deberías invertir la mayor parte de tu tiempo en pensar acerca de interfaces en vez de implementaciones.
 
-Source: Nicholas Zakas, author 'High-performance JavaScript websites' http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html
+Fuente: Nicholas Zakas, autor 'High-performance JavaScript websites' http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html
 
-Acknowledgement: 
+Reconocimiento:
 http://addyosmani.com/largescalejavascript/
 
 ## Follow the principles of X
