@@ -58,6 +58,11 @@ Don’t write code (write new code only when everything else fails) is the singl
 
 Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
 
+
+## Reinvent the Wheel
+The old adage "don't reinvent the wheel" doesn't apply when the wheel comes attached to a locomotive engine. [Source](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
+Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one. [Source](http://nodejs.debuggable.com/2011-02-26.txt)
+
 #### Reducing the amount of code in your product should be a goal.
 
 "I hate code, and I want as little of it as possible in our product." - Jack Diederich
