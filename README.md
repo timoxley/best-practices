@@ -15,7 +15,7 @@ The key is to acknowledge from the start that you have no idea how this will gro
 
 Source: Nicholas Zakas, author 'High-performance JavaScript websites' http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html
 
-Acknowledgement: 
+Acknowledgement:
 http://addyosmani.com/largescalejavascript/
 
 ## Follow the principles of X
@@ -29,7 +29,7 @@ In 1984, Bob Scheifler and Jim Gettys set out the early principles of X:
    * If you can get 90 percent of the desired effect for 10 percent of the work, use the simpler solution. (See also Worse is better.)
    * Isolate complexity as much as possible.
    * Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
-   
+
 The first principle was modified during the design of X11 to: "Do not add new functionality unless you know of some real application that will require it."
 
 Source: http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles
@@ -64,7 +64,7 @@ Source: http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers/
 
 ## Stop Writing Classes
 
-The signature of "this shouldn't be a class" is when the class has two methods, and one of them is the constructor. 
+The signature of "this shouldn't be a class" is when the class has two methods, and one of them is the constructor.
 Any time you see these signs, you probably should have just written a function.
 
 Source: Jack Diederich, Stop Writing Classes http://pyvideo.org/video/880/stop-writing-classes
@@ -123,7 +123,7 @@ Source: http://junit.sourceforge.net/doc/testinfected/testing.htm
 ### Flaw #2: Digging into Collaborators
 #### Warning Signs
 * Objects are passed in but never used directly (only used to get access to other objects)
-* Law of Demeter violation: method call chain walks an object graph with more than one dot (.) 
+* Law of Demeter violation: method call chain walks an object graph with more than one dot (.)
 * Suspicious names: context, environment, principal, container, or manager
 
 ### Flaw #3: Brittle Global State & Singletons
@@ -190,14 +190,14 @@ and few calculations to defeat: how much more no calculation at all! It is by at
 For this to work, everyone involved has to listen, everyone has to be open, everyone has to be responsive. Or we could keep flailing away with the fucked up attitude that “it has to be this way” because the sacred project plan says it’s this way. Because that really is a lot of fun, isn’t it?
 
 ## Programming is also Teaching your team
-... a team of mediocre, inexperienced coders who work together and write for the benefit of the team has the capability to become a great team, and they can take that learning approach to create other great teams. *It all comes down to whether the team sees its work as simply writing code... or writing with the goal of both code and learning*" 
+... a team of mediocre, inexperienced coders who work together and write for the benefit of the team has the capability to become a great team, and they can take that learning approach to create other great teams. *It all comes down to whether the team sees its work as simply writing code... or writing with the goal of both code and learning*"
 (Emphasis mine)
 http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam
 (Article itself not that great, but the message I quoted is important.)
 
 
 ### "The most important element of successful software development is learning."
-When the entire team meets a certain standard for competence, there is a very large learning surface exposed and the team is able to absorb more information. 
+When the entire team meets a certain standard for competence, there is a very large learning surface exposed and the team is able to absorb more information.
 http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html
 
 ## "...there are lies, damned lies, and software development estimates."
@@ -221,7 +221,7 @@ Source: Uncle Bob Martin "Screaming Architecture" http://blog.8thlight.com/uncle
 
 ##Unix Philosophy
 
-"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface" - Doug McIlroy, quoted in A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5. 
+"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface" - Doug McIlroy, quoted in A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
 
 * Rule of Modularity: Write simple parts connected by clean interfaces.
 * Rule of Clarity: Clarity is better than cleverness.
