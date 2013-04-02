@@ -1,7 +1,7 @@
 # Programming Best Practices Tidbits
 ### A Collection of quotes and paraphrases for developers from around the web.
 
-Use your own judgment in their application.
+Use your own judgment in their application[.](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c95y6la)
 
 * * *
 
