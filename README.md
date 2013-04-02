@@ -1,6 +1,8 @@
 # Programming Best Practices Tidbits
 ### A Collection of quotes and paraphrases for developers from around the web.
 
+Use your own judgment in their application.
+
 * * *
 
 ## Never build Large Apps
