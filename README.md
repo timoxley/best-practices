@@ -13,33 +13,6 @@ The secret to building large apps is never build large apps. Break your applicat
 
 [Source](http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html)
 
-## Accept that you have no idea how this will grow
-
-The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
-
-– Nicholas Zakas, author "High-performance JavaScript websites"
-
-[Source](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
-
-[Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
-
-
-## Follow the principles of X
-
-In 1984, Bob Scheifler and Jim Gettys set out the early principles of X:
-
-   * Do not add new functionality unless an implementor cannot complete a real application without it.
-   * It is as important to decide what a system is not as to decide what it is. Do not serve all the world's needs; rather, make the system extensible so that additional needs can be met in an upwardly compatible fashion.
-   * The only thing worse than generalizing from one example is generalizing from no examples at all.
-   * If a problem is not completely understood, it is probably best to provide no solution at all.
-   * If you can get 90 percent of the desired effect for 10 percent of the work, use the simpler solution. (See also Worse is better.)
-   * Isolate complexity as much as possible.
-   * Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
-
-The first principle was modified during the design of X11 to: "Do not add new functionality unless you know of some real application that will require it."
-
-[Source](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
-
 ## Quality Matters
 
 When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use anymore because they gradually lost the ability to iterate.
@@ -47,21 +20,6 @@ When I hear "JUST BANG OUT CODE THAT WORKS" I think of all the apps I don't use 
 – Avdi Grimm
 
 [Source](https://twitter.com/#!/avdi/status/180747721852985344)
-
-## Don't do hard things, do easy things.
-
-* Simple is better than complex.
-* Complex is better than complicated.
-* Flat is better than nested.
-* Readability counts.
-* If the implementation is hard to explain, it's a bad idea.
-* If the implementation is easy to explain, it may be a good idea.
-
-– The Zen of Python
-
-[Source](http://www.python.org/dev/peps/pep-0020/)
-
-Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
 
 ## Don't Write Code
 
@@ -95,6 +53,24 @@ Inventing your own wheels gives you a deep appreciation and understanding of how
 
 [Source](http://nodejs.debuggable.com/2011-02-26.txt)
 
+## Don't do hard things, do easy things.
+
+* Simple is better than complex.
+* Complex is better than complicated.
+* Flat is better than nested.
+* Readability counts.
+* If the implementation is hard to explain, it's a bad idea.
+* If the implementation is easy to explain, it may be a good idea.
+
+– The Zen of Python
+
+[Source](http://www.python.org/dev/peps/pep-0020/)
+
+Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
+
+## Rewriting > Refactoring
+If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
+
 ## Refactoring > Rewriting
 
 #### Common Excuses For A Software Rewrite
@@ -103,7 +79,6 @@ Inventing your own wheels gives you a deep appreciation and understanding of how
 3. We Picked The Wrong Platform/Language
 
 #### Why Rewriting Is (Almost) Never A Good Idea
-
 1. [It Always Takes Longer Than You Expect](http://en.wikipedia.org/wiki/Hofstadter's_law)
 2. Markets Change
 2. Existing Customers Become Frustrated
@@ -112,9 +87,6 @@ Inventing your own wheels gives you a deep appreciation and understanding of how
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
-## Rewriting > Patching
-If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
-
 ## Forget new features, Just do the same stuff better.
 
 The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
@@ -122,6 +94,23 @@ The problem: it is too easy to lose sight of what users often care about more, w
 – Tim Anderson
 
 [Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
+
+
+## Accept that you have no idea how this will grow
+
+The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
+
+– Nicholas Zakas, author "High-performance JavaScript websites"
+
+[Source](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
+
+[Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
+
+## Avoid Code Smells
+
+[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
+[Source](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
+
 
 ## Write unit tests.
 Every programmer knows they should write tests for
@@ -181,11 +170,6 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 ## Avoid mixing Object Creation with Application Logic
 
 [Source](http://misko.hevery.com/2008/09/30/2008/07/08/how-to-think-about-the-new-operator/)
-
-## Avoid Code Smells
-
-[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
-[Source](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
 
 ## Avoid creating technical debt.
 
@@ -248,7 +232,20 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 [Source](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 
-##Unix Philosophy
+## Follow the principles of X
+
+* Do not add new functionality unless you know of some real application that will require it.
+* It is as important to decide what a system is not as to decide what it is. Do not serve all the world's needs; rather, make the system extensible so that additional needs can be met in an upwardly compatible fashion.
+* The only thing worse than generalizing from one example is generalizing from no examples at all.
+* If a problem is not completely understood, it is probably best to provide no solution at all.
+* If you can get 90 percent of the desired effect for 10 percent of the work, use the simpler solution. (See also Worse is better.)
+* Isolate complexity as much as possible.
+* Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
+
+[Source](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
+
+
+## Follow the principles of Unix
 
 "This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface" - Doug McIlroy, quoted in A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
 
