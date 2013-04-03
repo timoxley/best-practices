@@ -87,102 +87,95 @@ Si vous changez plus de 25% de votre classe ou votre méthode, envisagez de simp
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
-## Forget new features, Just do the same stuff better.
+## Oubliez les nouvelles fonctionnalités, faîtes juste la même chose en mieux.
 
-The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
+Le problème : il est vite arrivé que l'on perde de vue ce à quoi les utilisateurs tiennent le plus, qui sont la facilité d'utilisation des applications et les fonctionnalités qu'ils utilisent déjà le plus souvent.
 
 – Tim Anderson
 
 [Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
 
-## Accept that you have no idea how this will grow
+## Acceptez que vous n'avez aucune idée de comment cela va évoluer
 
-The key is to acknowledge from the start that you have no idea how this will grow. When you accept that you don't know everything, you begin to design the system defensively... You should spend most of your time thinking about interfaces rather than implementations.
+La clé est de reconnaître dès le début que vous n'avez aucune idée de comment cela va évoluer. Lorsque l'on acceptez que l'on ne savez pas tout, on commence à concevoir le système sur la défensive... Il faudrait passer plus de temps à réfléchir aux interfaces plutôt qu'aux implémentations.
 
-– Nicholas Zakas, author "High-performance JavaScript websites"
+– Nicholas Zakas, auteur de "High-performance JavaScript websites"
 
 [Source](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
 
-[Acknowledgement to Addy Osmani](http://addyosmani.com/largescalejavascript/)
+[Renvoi vers Addy Osmani](http://addyosmani.com/largescalejavascript/)
 
-## Avoid Code Smells
+## Évitez le code sale
 
-[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
+[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)
 [Source](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
 
 
-## Write unit tests.
-Every programmer knows they should write tests for
-their code. Few do. The universal response to "Why not?" is "I'm
-in too much of a hurry." This quickly becomes a vicious cycle- the more pressure you feel, the fewer tests you write. The fewer tests you write, the less productive you are and the less stable your code becomes. The less productive and accurate you are, the more pressure you feel.
-Programmers burn out from just such cycles.
-Breaking out requires an outside influence. We found the outside influence we needed in a simple testing framework that lets us do a little testing that
-makes a big difference.
+## Écrivez des tests unitaires.
+
+Tous les programmeurs savent qu'ils devraient écrire des tests pour leur code. Peu le font. La réponse universelle à "Pourquoi pas ?" est "Je suis à la bourre." Cela devient rapidement un cercle vicieux -plus la pression augmente, moins on écrit de tests. Moins on écrit de tests, moins on est productif et moins stable devient notre code. Moins on est productif et précis, plus on a la pression. Les programmeurs s'épuisent dans de tels cycles. S'en sortir demande une aide extérieure. On trouve cette aide extérieure dont on a besoin dans un simple framework de test qui nous permet d'écrire un peu tests qui font un grande différence.
 
 [Source](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
 
-#### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
+#### [Sans tests unitaires] Vous ne factorisez pas, vous remuez juste la merde. — Hamlet D'Arcy
 
-## To write effective unit tests, you need to write testable code
+## Pour écrire des tests unitaires efficaces, vous avez besoin d'écrire du code qui peut être testé
 
-### Flaw #1: Constructor does Real Work
-#### Warning Signs
-* new keyword in a constructor or at field declaration
-* Static method calls in a constructor or at field declaration
-* Anything more than field assignment in constructors
-* Object not fully initialized after the constructor finishes (watch out for initialize methods)
-* Control flow (conditional or looping logic) in a constructor
-* Code does complex object graph construction inside a constructor rather than using a factory or builder
-* Adding or using an initialization block
+### Premier défaut : Le constructeur marche vraiment
+#### Signaux d'avertissement
+* nouveau mot clé dans un constructeur ou dans un champ de déclaration
+* Appels à une méthode statique dans un constructeur ou dans un champ de déclaration
+* N'importe quoi plus qu'un champ d'assignement dans les constructeurs
+* Un objet avec initialisation incomplète après que le constructeur ait fini (faîtes attention aux méthodes d'initialisation)
+* Flux de contrôle (logique conditionnelle ou boucle) dans un constructeur
+* Le code fait un graphe de construction d'objet complexe à l'intérieur du constructeur plutôt qu'utiliser une fabrique ou un monteur
+* Ajouter ou utiliser un bloc d'initialisation
 
-### Flaw #2: Digging into Collaborators
-#### Warning Signs
-* Objects are passed in but never used directly (only used to get access to other objects)
-* Law of Demeter violation: method call chain walks an object graph with more than one dot (.)
-* Suspicious names: context, environment, principal, container, or manager
+### Deuxième défaut : Creuser dans les collaborateurs
+#### Signaux d'avertissement
+* Les objets sont transmis mais jamais utilisés directement (utilisés seulement pour accéder à d'autres objets)
+* Violation de la loi de Déméter : la chaîne d'appel de méthode créé un graphe d'objet avec plus d'un point (.)
+* Noms suspects : contexte, environnement, principal, conteneur ou gestionnaire
 
-### Flaw #3: Brittle Global State & Singletons
-#### Warning Signs
-* Adding or using singletons
-* Adding or using static fields or static methods
-* Adding or using static initialization blocks
-* Adding or using registries
-* Adding or using service locators
+### Troisième défaut : État global et singleton fragiles
+#### Signaux d'avertissement
+* Ajouter ou utiliser des singletons
+* Ajouter ou utiliser des champs statiques ou des méthodes statiques
+* Ajouter ou utiliser des blocs d'initialisation statiques
+* Ajouter ou utiliser des registres
+* Ajouter ou utiliser des repères de service
 
-### Flaw #4: Class Does Too Much
-#### Warning Signs
-
-* Summing up what the class does includes the word “and”
-* Class would be challenging for new team members to read and quickly “get it”
-* Class has fields that are only used in some methods
-* Class has static methods that only operate on parameters
+### Quatrième défaut : Les classes en font trop
+#### Signaux d'avertissement
+* Résumer ce que la classe fait en incluant le mot "et"
+* La classe est difficile à lire et à comprendre rapidement pour les nouveaux membres de l'équipe
+* La classe a des champs qui ne sont utilisés que dans certaines méthodes
+* La classe a des méthodes statiques qui ne fonctionnent qu'avec des paramètres
 
 [Source](http://misko.hevery.com/code-reviewers-guide/)
 
 [Source](http://misko.hevery.com/presentations/)
 
-## Test-Driven Development with Inversion of Control.
+## Développement piloté par les tests avec Inversion de contrôle.
 
-Even if you aren't testing your code, you should write testable code. IoC enables testable code. Inject test-friendly dependencies or mocks at test time, to isolate the unit-under-test.
+Même si vous ne testez pas votre code, vous devez écrire du code capable d'être testé. L'Inversion de contrôle permet d'écrire du code testable. Injectez des dépendances favorables aux tests ou des objets factices durant la période de test, pour isoler les parties en cours de test.
 
-## Avoid mixing Object Creation with Application Logic
+## Évitez de mélanger la création d'objet avec la logique de l'application
 
 [Source](http://misko.hevery.com/2008/09/30/2008/07/08/how-to-think-about-the-new-operator/)
 
-## Avoid creating technical debt.
+## Éviter de créer une dette technique.
 
-"Although immature code may work fine and be completely acceptable to the customer, excess quantities will make a program unmasterable, leading to extreme specialization of programmers and finally an inflexible product. ... A little debt speeds development so long as it is paid back promptly with a rewrite ... *Every minute spent on not-quite-right code counts as interest on that [debt](http://en.wikipedia.org/wiki/Technical_debt
-).* Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation ...”
-(Emphasis mine)
+Bien que du code immature puisse fonctionner et être parfaitement accepetable pour le client, en abuser rendra un programme incontrôlable. ... Une petite dette accélère le développement jusqu'à ce qu'elle doive être rapidement remboursée par une réécriture ... *Chaque minute passée sur du code "pas tout à fait correct" s'ajoute aux intérêt de cette [dette](http://en.wikipedia.org/wiki/Technical_debt).* Des organisations d'ingénieurie toutes entières peuvent être bloquées sous le poids d'une dette d'implémentation non consolidée. ..." (Souligné par l'auteur)
 
 [Source](http://c2.com/doc/oopsla92.html)
 
 
-## Premature optimisation is the root of all evil
+## Une optimisation prématurée est la racine du mal
 
-"Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
+"Les programmeurs perdent énormément de temps à réfléchir ou à se préoccuper de la rapidité de parties non critiques de leurs programmes, et ces tentatives d'efficacité ont en réalité un impact très négatif lorsque de debug et la maintenance sont pris en compte. Nous devrions abandonner les petites améliorations environ 97% du temps : une optimisation prématurée est la racine du mal. Encore faut-il ne pas laisser filer l'opportunité dans les 3% critiques."
 
 [Source](http://c2.com/cgi/wiki?PrematureOptimization)
 
