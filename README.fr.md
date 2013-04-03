@@ -53,7 +53,7 @@ Créer vos propres roues vous donne une profonde appréciation et compréhension
 
 [Source](http://nodejs.debuggable.com/2011-02-26.txt)
 
-## Ne faîtes de de choses difficiles, faîtes-en des faciles.
+## Ne faîtes pas de choses difficiles, faîtes-en des faciles.
 
 * Simple est mieux que complexe.
 * Complexe est mieux que compliqué.
@@ -69,7 +69,7 @@ Créer vos propres roues vous donne une profonde appréciation et compréhension
 Présélection de la [présentation de Jack Diederich "Arrêtez d'écrire des classes"](http://pyvideo.org/video/880/stop-writing-classes)
 
 ## Réécrire > Factoriser
-Si vous changez plus de 25% de votre classe ou votre méthode, envisagez de simplement la réécrire. Vous écrirez le code plus clairement.
+Si vous changez plus de 25% de votre classe ou votre méthode, envisagez plutôt de la réécrire. Vous écrirez le code plus clairement.
 
 ## Factoriser > Réécrire
 
@@ -87,7 +87,7 @@ Si vous changez plus de 25% de votre classe ou votre méthode, envisagez de simp
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
-## Oubliez les nouvelles fonctionnalités, faîtes juste la même chose en mieux.
+## Oubliez les nouvelles fonctionnalités, faîtes la même chose en mieux.
 
 Le problème : il est vite arrivé que l'on perde de vue ce à quoi les utilisateurs tiennent le plus, qui sont la facilité d'utilisation des applications et les fonctionnalités qu'ils utilisent déjà le plus souvent.
 
@@ -98,7 +98,7 @@ Le problème : il est vite arrivé que l'on perde de vue ce à quoi les utilisat
 
 ## Acceptez que vous n'avez aucune idée de comment cela va évoluer
 
-La clé est de reconnaître dès le début que vous n'avez aucune idée de comment cela va évoluer. Lorsque l'on acceptez que l'on ne savez pas tout, on commence à concevoir le système sur la défensive... Il faudrait passer plus de temps à réfléchir aux interfaces plutôt qu'aux implémentations.
+La clé est de reconnaître dès le début que vous n'avez aucune idée de comment cela va évoluer. Lorsque l'on accepte que l'on ne sait pas tout, on commence à concevoir le système sur la défensive... Il faudrait passer plus de temps à réfléchir aux interfaces plutôt qu'aux implémentations.
 
 – Nicholas Zakas, auteur de "High-performance JavaScript websites"
 
@@ -123,11 +123,11 @@ Tous les programmeurs savent qu'ils devraient écrire des tests pour leur code. 
 
 ## Pour écrire des tests unitaires efficaces, vous avez besoin d'écrire du code qui peut être testé
 
-### Premier défaut : Le constructeur marche vraiment
+### Premier défaut : Le constructeur fait du vrai boulot
 #### Signaux d'avertissement
-* nouveau mot clé dans un constructeur ou dans un champ de déclaration
+* Nouveau mot clé dans un constructeur ou dans un champ de déclaration
 * Appels à une méthode statique dans un constructeur ou dans un champ de déclaration
-* N'importe quoi plus qu'un champ d'assignement dans les constructeurs
+* N'importe quoi plus gros qu'un champ d'assignement dans les constructeurs
 * Un objet avec initialisation incomplète après que le constructeur ait fini (faîtes attention aux méthodes d'initialisation)
 * Flux de contrôle (logique conditionnelle ou boucle) dans un constructeur
 * Le code fait un graphe de construction d'objet complexe à l'intérieur du constructeur plutôt qu'utiliser une fabrique ou un monteur
@@ -136,8 +136,8 @@ Tous les programmeurs savent qu'ils devraient écrire des tests pour leur code. 
 ### Deuxième défaut : Creuser dans les collaborateurs
 #### Signaux d'avertissement
 * Les objets sont transmis mais jamais utilisés directement (utilisés seulement pour accéder à d'autres objets)
-* Violation de la loi de Déméter : la chaîne d'appel de méthode créé un graphe d'objet avec plus d'un point (.)
-* Noms suspects : contexte, environnement, principal, conteneur ou gestionnaire
+* Violation de la loi de Déméter : la chaîne d'appel de méthode crée un graphe d'objet avec plus d'un point (.)
+* Noms suspects : contexte, environnement, principal, conteneur ou gestionnaire *(voir leur traduction anglaise)*
 
 ### Troisième défaut : État global et singleton fragiles
 #### Signaux d'avertissement
@@ -168,98 +168,96 @@ Même si vous ne testez pas votre code, vous devez écrire du code capable d'êt
 
 ## Éviter de créer une dette technique.
 
-Bien que du code immature puisse fonctionner et être parfaitement accepetable pour le client, en abuser rendra un programme incontrôlable. ... Une petite dette accélère le développement jusqu'à ce qu'elle doive être rapidement remboursée par une réécriture ... *Chaque minute passée sur du code "pas tout à fait correct" s'ajoute aux intérêt de cette [dette](http://en.wikipedia.org/wiki/Technical_debt).* Des organisations d'ingénieurie toutes entières peuvent être bloquées sous le poids d'une dette d'implémentation non consolidée. ..." (Souligné par l'auteur)
+Bien que du code immature puisse fonctionner et être parfaitement acceptable pour le client, en abuser rendra un programme incontrôlable. ... Une petite dette accélère le développement jusqu'à ce qu'elle doive être rapidement remboursée par une réécriture ... *Chaque minute passée sur du code "pas tout à fait correct" s'ajoute aux intérêt de cette [dette](http://en.wikipedia.org/wiki/Technical_debt).* Des organisations d'ingénieurie toutes entières peuvent être bloquées sous le poids d'une dette d'implémentation non consolidée. ..." (Souligné par l'auteur)
 
 [Source](http://c2.com/doc/oopsla92.html)
 
 
 ## Une optimisation prématurée est la racine du mal
 
-"Les programmeurs perdent énormément de temps à réfléchir ou à se préoccuper de la rapidité de parties non critiques de leurs programmes, et ces tentatives d'efficacité ont en réalité un impact très négatif lorsque de debug et la maintenance sont pris en compte. Nous devrions abandonner les petites améliorations environ 97% du temps : une optimisation prématurée est la racine du mal. Encore faut-il ne pas laisser filer l'opportunité dans les 3% critiques."
+"Les programmeurs perdent énormément de temps à réfléchir ou à se préoccuper de la rapidité de parties non critiques de leurs programmes, et ces tentatives d'efficacité ont en réalité un impact très négatif lorsque le debug et la maintenance sont pris en compte. Nous devrions abandonner les petites améliorations environ 97% du temps : une optimisation prématurée est la racine du mal. Encore faut-il ne pas laisser filer l'opportunité dans les 3% critiques."
 
 [Source](http://c2.com/cgi/wiki?PrematureOptimization)
 
-## Plan, Plan, Plan.
+## Planifiez, planifiez, planifiez.
 
-It is much cheaper to do it correctly the first time than to redo it later on.
-The sooner a problem is identified and fixed, the cheaper it is to do so.
+Il est moins coûteux de faire correctement la première fois que le refaire plus tard.
+Plus tôt un problème est identifié et corrigé, moins il sera nécessaire de s'investir dessus.
 
-"The general who wins a battle makes many calculations in his temple before the battle is fought. The general who loses a battle makes but few calculations beforehand. Thus do many calculations lead to victory,
-and few calculations to defeat: how much more no calculation at all! It is by attention to this point that I can foresee who is likely to win or lose."
+"Que chacun se représente les évaluations faites dans le temple, avant les hostilités, comme des mesures : elles disent la victoire lorsqu'elles démontrent que votre force est supérieure à celle de l'ennemi; elles indiquent la défaite lrsqu'elles démontrent qu'il est inférieur en force. Considérez qu'avec de nombreux calculs on peut remporter la victoire, redoutez leur insuffisance. Combien celui n'en fait point a peu de chances de gagner ! C'est grâce à cette méthode que j'examine la situation, et l'issue apparaîtra clairement." (*The Art of War* by Sun Tzu)
 
-#### "Plans are worthless, planning is invaluable."- Sir Winston Churchill
+#### "Les plans sont sans valeur, la préparation est inestimable."- Sir Winston Churchill
 
-For this to work, everyone involved has to listen, everyone has to be open, everyone has to be responsive. Or we could keep flailing away with the fucked up attitude that “it has to be this way” because the sacred project plan says it’s this way. Because that really is a lot of fun, isn’t it?
+Pour que cela marche, toutes les personnes concernées doivent écouter, tout le monde doit être ouvert et réactif. Ou nous pouvons continuer à aller dans le mur en nous répétant "ça doit être comme ça" parce que le plan *sacré* du projet dit que c'est ainsi. Parce que c'est vraiment éclatant, n'est-ce pas ?
 
-## Programming is also Teaching your team
-... a team of mediocre, inexperienced coders who work together and write for the benefit of the team has the capability to become a great team, and they can take that learning approach to create other great teams. *It all comes down to whether the team sees its work as simply writing code... or writing with the goal of both code and learning*"
-(Emphasis mine)
+## La programmation c'est aussi apprendre à votre équipe
+... Une équipe de développeurs incompétents, inexpérimentés qui travaillent ensemble et écrivent  pour le bien de l'équipe, a la capacité de devenir une grande équipe et ils peuvent itiliser cette méthode d'apprentissage pour créer d'autres bonnes équipes. *Cela résulte du fait que l'équipe voir son travail grâce à une simple écriture de code... Ou bien avec l'objectif du code et de lapprentissage*"
+(Souligné par l'auteur)
 
 – Reginald Braithwaite
 
 [Source](http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam)
 
-### "The most important element of successful software development is learning."
-When the entire team meets a certain standard for competence, there is a very large learning surface exposed and the team is able to absorb more information.
+### "L'élément le plus important dans la réussite du développement d'un programme est l'apprentissage"
+Quand l'équipe toute entière rencontre un certain standard de compétence, alors apparait une très grande surface d'apprentissage et l'équipe est capable d'absorber plus d'informations.
 
 [Source](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
-## "...there are lies, damned lies, and software development estimates."
+## "...il y a des mensonges, de lourds mensonges et des estimations de développement de logiciel."
 
-Software can only partially be designed in advance. ... requirements suffer from observation, that the act of building software causes the requirements to change. ...technical factors cannot be perfectly understood, that only the act of trying to build something with specific components will reveal all of the gotchas and who-knews associated with a chosen technology strategy. ...software design is an iterative process, starting with a best guess that is continually refined with experience.
-the normal case for software projects is that tasks are rarely completed exactly as estimated, but that as a project progresses, the aggregate variance from estimates falls.
+Un logiciel ne peut être conçu à l'avance que partiellement. ... Les besoins souffrent de l'observation que le fait de créer le logiciel les amènent à changer. ...Les facteurs techniques ne peuvent pas être parfaitement compris, c'est seulement en essayant de créer quelque chose avec des composants spécifiques que l'ont découvre tous les défauts imprévus associés à une stratégie technique définie. ...la conception de logiciel est un processus itératif, commençant par une meilleure déduction possible qui est ensuite constamment affinée avec l'expérience. Le cas normal pour des projets logiciels est les tâches s'effectuent rarement telles qu'elles le devaient, mais au fur et à mesure que le projet avance, le total de variations des estimations s'amenuise.
 
 [Source](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
-Nobody likes to look stupid. If you’re a professional and someone puts you on the spot to answer “how long will this take?” it’s only human to want to provide an answer. Whether you call it professional pride or ego, it’s a powerful driver.
-Good IT workers really don’t like saying “I don’t know.” If they say it, they probably mean it. So stop pushing for a definitive answer when one doesn’t exist.It’s perfectly reasonable to want some sort of plan up front. I’m actually one of those funny types who believe up front planning is a necessity. So long as everyone understands an estimate is just that: an estimate. You learn as you go along and discover more detail. So you revise the estimate accordingly.
+Personne n'aime avoir l'air idiot. Si vous êtes un professionnel et que quelqu'un vous met dans l'embarras en vous demandant "combien de temps ça prendra ?", c'est humain de vouloir être capable de répondre. Que vous appeliez cela de la fierté professionnelle ou de l'égo, c'est un puissant conducteur.
+Les informaticiens talentueux n'aiment vraiment pas dire "je ne sais pas". S'ils le disent, ils le pensent très certainement. Alors arrêtez d'exiger une réponse définitive lorsqu'il n'en existe pas. C'est tout à fait raisonnable de vouloir un plan de départ. En réalité je suis moi-même un de ces types qui pensent qu'un plan de départ est nécessaire. Tant que tout le monde comprend ce que représente une estimation : une estimation. Vous apprendrez au fur et à mesure et découvrirez davantage de détails. Vous pourrez alors corriger l'estimation en fonction.
 
 
-##Your architecture should resemble your domain
+## Votre architecture doit ressembler à votre domaine
 
-So what does the architecture of your application scream? When you look at the top level directory structure, and the source files in the highest level package; do they scream: health care system, or accounting system, or inventory management system? Or do they scream: rails, or spring/hibernate, or asp?
+Qu'est-ce que l'architecture de votre application vous crie ? Lorsque vous regardez la structure du dossier le plus haut, et les fichiers sources dans le package le plus haut; est-ce qu'ils vous crient système de santé, ou système comptable, ou système de gestion d'inventaire ? Ou crient-ils rails, ou spring/hibernate, ou asp ?
 
-Architectures should not be supplied by frameworks. Frameworks are tools to be used, not architectures to be conformed to. If your architecture is based on frameworks, then it cannot be based on your use cases.
+Les architectures ne doivent pas être fournies par les frameworks. Les frameworks sont des outils à utiliser, pas des architectures auxquelles se conformer. Si votre architecture est basée sur des frameworks, alors elle ne peut pas être basée sur votre cas d'utilisation.
 
 – Uncle Bob Martin, "Screaming Architecture"
 
 [Source](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 
-## Follow the principles of X
+## Suivez le principe de X
 
-* Do not add new functionality unless you know of some real application that will require it.
-* It is as important to decide what a system is not as to decide what it is. Do not serve all the world's needs; rather, make the system extensible so that additional needs can be met in an upwardly compatible fashion.
-* The only thing worse than generalizing from one example is generalizing from no examples at all.
-* If a problem is not completely understood, it is probably best to provide no solution at all.
-* If you can get 90 percent of the desired effect for 10 percent of the work, use the simpler solution. (See also Worse is better.)
-* Isolate complexity as much as possible.
-* Provide mechanism rather than policy. In particular, place user interface policy in the clients' hands.
+* N'ajoutez pas de nouvelle fonctionnalité à moins que vous connaissiez une vraie application qui en aura besoin.
+* Il est tout aussi important de décider de ce qu'un système n'est pas que de décider de ce qu'il est. Ne répondez pas aux besoins de la terre entière; plutôt, faîtes un système souple pouvant accueillir des besoins additionnels en toute compatibilité.
+* La seule chose pire que la généralisation depuis un seul exemple est la généralisation depuis aucun exemple du tout.
+* Si un problème n'est pas totalement compris, il vaudrait probablement mieux ne pas lui fournir de solution du tout.
+* Si vous pouvez obtenir 90% des effets désirés avec 10% de travail, utilisez la solution la plus simple. (Voir aussi *Le pire est mieux.*)
+* Isolez le plus possible la complexité.
+* Fournissez des mécanismes plutôt des politiques. En particulier, déléguez au client la politique d'interface.
 
 [Source](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
 
 
-## Follow the principles of Unix
+## Suivez les principes d'Unix
 
-"This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface" - Doug McIlroy, quoted in A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
+"Voici la philosophie d'Unix : écrire des programmes qui font une chose correctement. Écrire des programmes qui fonctionnent ensemble. Écrire des programmes qui gèrent des flux de texte, parce que c'est une interface universelle" - Citation de Doug McIlroy dans Un Quart de Siècle d'Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
 
-* Rule of Modularity: Write simple parts connected by clean interfaces.
-* Rule of Clarity: Clarity is better than cleverness.
-* Rule of Composition: Design programs to be connected to other programs.
-* Rule of Separation: Separate policy from mechanism; separate interfaces from engines.
-* Rule of Simplicity: Design for simplicity; add complexity only where you must.
-* Rule of Parsimony: Write a big program only when it is clear by demonstration that nothing else will do.
-* Rule of Transparency: Design for visibility to make inspection and debugging easier.
-* Rule of Robustness: Robustness is the child of transparency and simplicity.
-* Rule of Representation: Fold knowledge into data so program logic can be stupid and robust.
-* Rule of Least Surprise: In interface design, always do the least surprising thing.
-* Rule of Silence: When a program has nothing surprising to say, it should say nothing.
-* Rule of Repair: When you must fail, fail noisily and as soon as possible.
-* Rule of Economy: Programmer time is expensive; conserve it in preference to machine time.
-* Rule of Generation: Avoid hand-hacking; write programs to write programs when you can.
-* Rule of Optimization: Prototype before polishing. Get it working before you optimize it.
-* Rule of Diversity: Distrust all claims for “one true way”.
-* Rule of Extensibility: Design for the future, because it will be here sooner than you think.
+* Règle de la Modularité : écrire des parties simples connectées par des interfaces propres.
+* Règle de la Clarté : la clarté est meilleure que l'intelligence.
+* Règle de la Composition : concevoir des programmes pouvant être connectés à d'autres programmes.
+* Règle de la Séparation : séparer la politique du méchanisme; séparer les interfaces des moteurs.
+* Règle de a Simplicité : concevoir pour la simplicité; ajouter de la complexité seulement où il le faut.
+* Règle de la Parsimonie : écrire un gros programme seulement quand il est prouvé que rien d'autre ne sera fait.
+* Règle de la Transparence : concevoir pour la visibilité et ainsi rendre l'inspection et le debug plus aisés.
+* Règle de la Robusticité : la robusticité est l'enfant de la transparence et de la simplicité.
+* Règle de la Représentation : inclure la connaissance dans les données pour que la logique du programme puissent être bête et robuste.
+* Règle de la Surprise : dans la conception d'interface, toujours faire le moins surprenant possible.
+* Règle du Silence : quand un programme n'a rien d'intéressant à dire, il devrait ne rien dire du tout.
+* Règle de la Réparation : lorsque vous devez échouer, échouez bruyamment et aussi vite que possible.
+* Règle de l'Économie : le temps d'un programmeur vaut cher, le transformer de préférence en temps machine.
+* Règle de la Génération : éviter le *fait à la main*, écrire les programmes pour écrire des programmes dès que possible.
+* Règle de l'Optimisation : prototyper avant de polir. Faire marcher avant d'optimiser.
+* Règle de la Diversité : détruire toutes les reventications de "une seule vraie façon de faire".
+* Règle de l'Extensibilité : concevoir pour le futur, parce que ça arrivera plus vite qu'on ne le pense.
 
-– Eric S. Raymond, "The Art of Unix Programming"
+– Eric S. Raymond, "L'Art de la Programmation Unix"
 
 [Source](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
