@@ -48,6 +48,14 @@ Any time you see these signs, you probably should have just written a function.
 
 [Source](http://pyvideo.org/video/880/stop-writing-classes)
 
+## Forget new features, Just do the same stuff better.
+
+The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
+
+– Tim Anderson
+
+[Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
+
 ## Reinvent the Wheel
 Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one.
 
@@ -86,14 +94,6 @@ If you are changing more than 25% of a class or method, consider simply rewritin
 4. You Don't Control The Rewrite, It Controls You
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
-
-## Forget new features, Just do the same stuff better.
-
-The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
-
-– Tim Anderson
-
-[Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
 
 ## Accept that you have no idea how this will grow
