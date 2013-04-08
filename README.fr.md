@@ -48,6 +48,14 @@ L'indication "ceci ne devrait pas être une classe" intervient lorsque la classe
 
 [Source](http://pyvideo.org/video/880/stop-writing-classes)
 
+## Oubliez les nouvelles fonctionnalités, faîtes la même chose en mieux.
+
+Le problème : il est vite arrivé que l'on perde de vue ce à quoi les utilisateurs tiennent le plus, qui sont la facilité d'utilisation des applications et les fonctionnalités qu'ils utilisent déjà le plus souvent.
+
+– Tim Anderson
+
+[Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
+
 ## Réinventez la roue
 Créer vos propres roues vous donne une profonde appréciation et compréhension de comment les roues "roulent" et ce qui fait une bonne roue.
 
@@ -86,14 +94,6 @@ Si vous changez plus de 25% de votre classe ou votre méthode, envisagez plutôt
 4. Vous ne contrôlez pas la réécriture, c'est elle qui vous contrôle
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
-
-## Oubliez les nouvelles fonctionnalités, faîtes la même chose en mieux.
-
-Le problème : il est vite arrivé que l'on perde de vue ce à quoi les utilisateurs tiennent le plus, qui sont la facilité d'utilisation des applications et les fonctionnalités qu'ils utilisent déjà le plus souvent.
-
-– Tim Anderson
-
-[Source](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
 
 ## Acceptez que vous n'avez aucune idée de comment cela va évoluer
