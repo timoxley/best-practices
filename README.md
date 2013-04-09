@@ -48,6 +48,11 @@ Any time you see these signs, you probably should have just written a function.
 
 [Source](http://pyvideo.org/video/880/stop-writing-classes)
 
+## 
+
+I lamented the way the Design Patterns book was waved around... Too much abstraction can be worse than too little.
+
+
 ## Forget new features, Just do the same stuff better.
 
 The problem: it is too easy to lose sight of what users often care about more, which is the performance and usability of the applications and features they already use most often.
@@ -60,6 +65,14 @@ The problem: it is too easy to lose sight of what users often care about more, w
 Inventing your own wheels gives you a deep appreciation and understanding of how wheels work and what makes a good one.
 
 [Source](http://nodejs.debuggable.com/2011-02-26.txt)
+
+## It’s harder to read code than to write it.
+
+This is why code reuse is so hard. This is why everybody ... has a different function they like to use for splitting strings into arrays of strings. They write their own function because it's easier and more fun than figuring out how the old function works.
+
+[Source](http://www.joelonsoftware.com/articles/fog0000000069.html)
+
+## The "don't make me think" principle applies to API usability as much as websites.
 
 ## Don't do hard things, do easy things.
 
@@ -76,17 +89,7 @@ Inventing your own wheels gives you a deep appreciation and understanding of how
 
 Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
 
-## Rewriting > Refactoring
-If you are changing more than 25% of a class or method, consider simply rewriting it. You will write the code more cleanly.
-
-## Refactoring > Rewriting
-
-#### Common Excuses For A Software Rewrite
-1. The Code Sucks
-2. "We're So Much Smarter Now"
-3. We Picked The Wrong Platform/Language
-
-#### Why Rewriting Is (Almost) Never A Good Idea
+## Rewriting Is (Almost) Never A Good Idea: Refactor instead
 1. [It Always Takes Longer Than You Expect](http://en.wikipedia.org/wiki/Hofstadter's_law)
 2. Markets Change
 2. Existing Customers Become Frustrated
@@ -95,6 +98,18 @@ If you are changing more than 25% of a class or method, consider simply rewritin
 
 [Source](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
 
+## Don't throw away working code.
+
+Bugs can take weeks of real-world usage before they are found.
+When you throw away code and start from scratch, you are throwing away all that knowledge. All those collected bug fixes. Years of programming work.
+You are wasting an outlandish amount of money writing code that already exists.
+
+[Source](http://www.joelonsoftware.com/articles/fog0000000069.html)
+
+## Consider micro-rewrites
+If you are changing more than 25% of a class or method, consider simply rewriting it. You will most likely write the code more cleanly.
+
+#### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
 
 ## Accept that you have no idea how this will grow
 
@@ -122,8 +137,6 @@ makes a big difference.
 
 [Source](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
-
-#### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
 
 ## To write effective unit tests, you need to write testable code
 
