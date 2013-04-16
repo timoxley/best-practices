@@ -89,6 +89,15 @@ This is why code reuse is so hard. This is why everybody ... has a different fun
 
 Shortlist cut from [Jack Diederich's "Stop Writing Classes" talk](http://pyvideo.org/video/880/stop-writing-classes)
 
+## mediocre systems are encapsulated; great systems are codesigned.
+
+The ultimate way to fight complexity is to fight it directly, that is, don't create it.
+[Source](https://news.ycombinator.com/item?id=4825527)
+
+> Our efforts to decouple the screens were misguided because we were stuck with the mentality of “decouple this code” when we should have had the mentality of “couple this code correctly”
+
+[Source](http://lostechies.com/derickbailey/2010/04/12/coupling-is-your-friend/)
+
 ## Rewriting Is (Almost) Never A Good Idea: Refactor instead
 1. [It Always Takes Longer Than You Expect](http://en.wikipedia.org/wiki/Hofstadter's_law)
 2. Markets Change
@@ -110,6 +119,8 @@ You are wasting an outlandish amount of money writing code that already exists.
 If you are changing more than 25% of a class or method, consider simply rewriting it. You will most likely write the code more cleanly.
 
 #### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
+
+
 
 ## Accept that you have no idea how this will grow
 
