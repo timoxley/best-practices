@@ -52,7 +52,7 @@ Fuente: https://twitter.com/#!/avdi/status/180747721852985344
 Fuente: El Zen de Python: http://www.python.org/dev/peps/pep-0020/
 (Lista + título de Jack Diederich of http://pyvideo.org/video/880/stop-writing-classes)
 
-## Don't Write Code
+## No escribas código
 
 No escribas código (escribe nuevo código solamente cuando todo lo demás falle) es la lección más importante que todo desarrollado debería aprender. La cantidad de código duplicado y basura que existe (en todos los proyectos) es abrumadora. En muchos casos los desarrolladores ni se molestan en echar un vistazo. Lo único que quieren es escribir código.
 
