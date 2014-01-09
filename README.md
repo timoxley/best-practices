@@ -270,3 +270,7 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 – Eric S. Raymond, "The Art of Unix Programming"
 
 [Source](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/timoxley/best-practices/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
