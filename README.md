@@ -5,6 +5,10 @@ Use your own judgment in their application[.](http://www.reddit.com/r/programmin
 
 * * *
 
+[![The mess we're in](https://cloud.githubusercontent.com/assets/43438/4344401/0ddd5fc8-408f-11e4-8887-b0bfbce91dc7.png)](https://www.youtube.com/watch?v=lKXe3HUG2l4)
+
+– Joe Armstrong, author Erlang
+
 ## Never build Large Apps
 
 The secret to building large apps is never build large apps. Break your applications into small pieces. Then, assemble those testable, bite-sized pieces into your big application.
