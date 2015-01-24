@@ -39,6 +39,16 @@ The old adage "don't reinvent the wheel" doesn't apply when the wheel comes atta
 
 [Source](http://www.reddit.com/r/programming/comments/1bcebh/programming_best_practices/c9616mn)
 
+#### Don't expect a rewrite to do better than the original
+It's important to remember that when you start from scratch there is absolutely no reason to believe that you are
+going to do a better job than you did the first time. First of all, you probably don't even have the same
+programming team that worked on version one, so you don't actually have "more experience". You're just going to make
+most of the old mistakes again, and introduce some new problems that weren't in the original version.
+
+– Joel Spolsky
+
+[Source](http://www.joelonsoftware.com/articles/fog0000000069.html)
+
 ## Stop Writing Classes
 
 The signature of "this shouldn't be a class" is when the class has two methods, and one of them is the constructor.
