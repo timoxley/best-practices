@@ -7,7 +7,7 @@ Utilice su propio juicio en su aplicaci&oacute;n.
 
 ## Nunca construyas aplicaciones grandes
 
-El secreto para construir aplicaciones grandes es nunca construir aplicaciones grandes. Rompe tus aplicaciones en piezas m&aacute;s pequeñas. Entonces, ensambla esas piezas del tamaño de un mordizco que pueden ponerse a prueba, dentro de tu aplicaci&oacute;n grande.
+El secreto para construir aplicaciones grandes es nunca construir aplicaciones grandes. Rompe tus aplicaciones en piezas m&aacute;s peque&ntilde;as. Entonces, ensambla esas piezas del tama&ntilde;o de un mordizco que pueden ponerse a prueba, dentro de tu aplicaci&oacute;n grande.
 
 - Justin Meyer, autor de *JavaScriptMVC*.
 
@@ -23,7 +23,7 @@ Cuando escucho "¡S&Oacute;LO LIBERA DE UNA VEZ EL C&Oacute;DIGO QUE YA FUNCIONA
 
 ## No escribas c&oacute;digo
 
-No escribas c&oacute;digo (escribe nuevo c&oacute;digo solamente cuando todo lo dem&aacute;s falle) es la lecci&oacute;n m&aacute;s importante que todo desarrollador deber&iacute;a aprender. La cantidad de c&oacute;digo duplicado y basura que existe (en todos los proyectos) es abrumadora. En muchos casos los desarrolladores ni se molestan en echar un vistazo. Lo único que quieren es escribir c&oacute;digo.
+No escribas c&oacute;digo (escribe nuevo c&oacute;digo solamente cuando todo lo dem&aacute;s falle) es la lecci&oacute;n m&aacute;s importante que todo desarrollador deber&iacute;a aprender. La cantidad de c&oacute;digo duplicado y basura que existe (en todos los proyectos) es abrumadora. En muchos casos los desarrolladores ni se molestan en echar un vistazo. Lo &uacute;nico que quieren es escribir c&oacute;digo.
 
 [Fuente](http://blogs.agilefaqs.com/2009/10/19/biggest-stinkers)
 
@@ -43,9 +43,9 @@ El viejo dicho "No reinventes la rueda" no aplica cuando la rueda es del motor d
 
 ## Deja de escribir clases
 
-La señal de que "esto no deber&iacute;a ser una clase" es cuando la clase tiene dos m&eacute;todos, y uno de ellos es el constructor. Cualquier rato que veas estas señales, significa que probablemente deber&iacute;as haber escrito s&oacute;lo una funci&oacute;n.
+La se&ntilde;al de que "esto no deber&iacute;a ser una clase" es cuando la clase tiene dos m&eacute;todos, y uno de ellos es el constructor. Cualquier rato que veas estas se&ntilde;ales, significa que probablemente deber&iacute;as haber escrito s&oacute;lo una funci&oacute;n.
 
-Jack Diederich
+- Jack Diederich
 
 [Fuente](http://pyvideo.org/video/880/stop-writing-classes)
 
@@ -100,7 +100,7 @@ Si vas a cambiar m&aacute;s del 25% de una clase o m&eacute;todo, considera simp
 
 ## Acepta que no tienes idea de c&oacute;mo esto va a crecer
 
-La clave es reconocer desde el principio que no tienes idea de c&oacute;mo esto va a crecer. Cuando aceptes que no lo sabes todo, empezar&aacute;s a diseñar el sistema defensivamente... Deber&iacute;as invertir la mayor parte de tu tiempo en pensando en interfaces en vez de implementaciones.
+La clave es reconocer desde el principio que no tienes idea de c&oacute;mo esto va a crecer. Cuando aceptes que no lo sabes todo, empezar&aacute;s a dise&ntilde;ar el sistema defensivamente... Deber&iacute;as invertir la mayor parte de tu tiempo en pensando en interfaces en vez de implementaciones.
 
 - Nicholas Zakas, autor de *High-performance JavaScript websites*
 
@@ -116,7 +116,7 @@ La clave es reconocer desde el principio que no tienes idea de c&oacute;mo esto 
 
 ## Escribe pruebas unitarias
 
-Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. Pocos lo hacen. La respuesta universal al "¿Por qu&eacute; no?" es "Tengo mucha prisa." R&aacute;pidamente esto se convierte en un c&iacute;rculo vicioso. Cuanta m&aacute;s presi&oacute;n sientas, menos pruebas escribir&aacute;s. Entre menos pruebas escribas, ser&aacute;s menos productivo y tu c&oacute;digo se volver&aacute; menos estable. Entre menos productivo seas, mayor presi&oacute;n sentir&aacute;s. Los programadores se desgastan con esos ciclos. Romperlos requiere de una influencia externa. Encontramos esa influencia externa en un simple framework de pruebas que nos deja hacer pequeñas pruebas que hacen una gran diferencia.
+Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. Pocos lo hacen. La respuesta universal al "¿Por qu&eacute; no?" es "Tengo mucha prisa." R&aacute;pidamente esto se convierte en un c&iacute;rculo vicioso. Cuanta m&aacute;s presi&oacute;n sientas, menos pruebas escribir&aacute;s. Entre menos pruebas escribas, ser&aacute;s menos productivo y tu c&oacute;digo se volver&aacute; menos estable. Entre menos productivo seas, mayor presi&oacute;n sentir&aacute;s. Los programadores se desgastan con esos ciclos. Romperlos requiere de una influencia externa. Encontramos esa influencia externa en un simple framework de pruebas que nos deja hacer peque&ntilde;as pruebas que hacen una gran diferencia.
 
 [Fuente](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
@@ -124,25 +124,25 @@ Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. P
 
 ## Para escribir pruebas unitarias efectivas, debes escribir c&oacute;digo que se pueda probar
 
-### Flaw #1: El constructor hace trabajo real
+### Falla #1: El constructor hace trabajo real
 #### Se&ntilde;ales de alerta
 
 * Existe `new` en un constructor o en la declaraci&oacute;n de un atributo.
 * Static method calls in a constructor or at field declaration
 * Se hace algo m&aacute;s que solo asignar en los constructores.
-* El objeot no esta completamente inicializado cuando el constructor termina (cuidado con los m&eacute;todos 'para inicializar')
-* Control de flujo en un constructor (conditional or looping logic)
+* El objeto no esta completamente inicializado cuando el constructor termina (cuidado con los m&eacute;todos 'para inicializar')
+* Control de flujo en un constructor (existe un condicional o un bucle)
 * Code does complex object graph construction inside a constructor rather than using a factory or builder
-* Adding or using an initialization block 
+* Adding or using an initialization block
 
-### Flaw #2: Digging into Collaborators
+### Falla #2: Digging into Collaborators
 #### Se&ntilde;ales de alerta
 
 * Objects are passed in but never used directly (only used to get access to other objects)
 * Law of Demeter violation: method call chain walks an object graph with more than one dot (.)
 * Suspicious names: context, environment, principal, container, or manager
 
-### Flaw #3: Brittle Global State & Singletons
+### Falla #3: Brittle Global State & Singletons
 #### Se&ntilde;ales de alerta
 
 * Adding or using singletons
@@ -151,12 +151,12 @@ Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. P
 * Adding or using registries
 * Adding or using service locators
 
-###Flaw #4: La clase hace demasiado
+###Falla #4: La clase hace demasiado
 #### Se&ntilde;ales de alerta
 
-* Summing up what the class does includes the word “and”
+* Al resumir lo que hace la clase se incluye el conector "y".
 * Class would be challenging for new team members to read and quickly “get it”
-* Class has fields that are only used in some methods
+* La clase tiene atributos que son utilizados s&oacute;lo en algunos m&eacute;todos.
 * Class has static methods that only operate on parameters
 
 [Fuente](http://misko.hevery.com/code-reviewers-guide/)
@@ -181,23 +181,21 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 
 ## La optmizaci&oacute;n prematura es la ra&iacute;z de todos los males
 
-"Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
+"Los programadores desperdician mucha cantidad de tiempo pensando o preocup&aacute;ndose sobre el rendimiento de partes del programa que no son cr&iacute;ticas y estos intentos realmente tienen un poderoso impacto negativo cuando consideramos el mantenimiento y la depuraci&oacute;n. Deber&iacute;amos olvidarnos de las pequenas optimizaciones, digamos el 97% del tiempo: la optimizaci&oacute;n prematura es la ra&iacute;z de todos los males"
 
 [Fuente](http://c2.com/cgi/wiki?PrematureOptimization)
 
-## Plan, Plan, Plan.
+## Planifica, Planifica, Planifica
 
-It is much cheaper to do it correctly the first time than to redo it later on.
-The sooner a problem is identified and fixed, the cheaper it is to do so.
+Es mucho m&aacute;s barato hacerlo correctamente la primera vez que rehacerlo posteriormente. Mientras m&aacute;s pronto se identifica y soluciona un problema, es m&aacute;s barato hacerlo.
 
-"The general who wins a battle makes many calculations in his temple before the battle is fought. The general who loses a battle makes but few calculations beforehand. Thus do many calculations lead to victory,
-and few calculations to defeat: how much more no calculation at all! It is by attention to this point that I can foresee who is likely to win or lose."
+"El general que gana una batalla hace muchos c&aacute;lculos en su templo antes del fragor la batalla.   El general que pierde una batalla hace pocos c&aacute;lculos con antelaci&oacute;n. Hacer muchos c&aacute;lculos lleva a la victoria y pocos c&aacute;lculos a la derrota: ¡cu&aacute;nto m&aacute;s ning&uacute;n c&aacute;lculo en absoluto! Por atenci&oacute;n a este punto yo puedo preveer quien es probable que gane o pierda"
 
-#### "Plans are worthless, planning is invaluable."- Sir Winston Churchill
+#### "Los planes son in&uacute;tiles, pero la planificaci&oacute;n lo es todo" - Sir Winston Churchill
 
 For this to work, everyone involved has to listen, everyone has to be open, everyone has to be responsive. Or we could keep flailing away with the fucked up attitude that “it has to be this way” because the sacred project plan says it’s this way. Because that really is a lot of fun, isn’t it?
 
-## Programa tambi&eacute;n envuelve ense&nacute;ar a tu equipo
+## Programar tambi&eacute;n envuelve ense&ntilde;ar a tu equipo
 
 ... un equipo de programadores mediocres, sin experiencia que trabajan juntos y escriben para el beneficio del equipo tiene la capacidad de convertirse en un gran equipo, y pueden tomar este enfoque para crear otros grandes equipos. *Todo se resume en si el eqiupo ve su trabajo como s&oacute;lo escribir c&oacute;digo, o escribir con el objetivo de tanto codificar como aprender*"
 (Cursivas m&iacute;as)
@@ -212,7 +210,7 @@ When the entire team meets a certain standard for competence, there is a very la
 
 [Fuente](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
-## "...there are lies, damned lies, and software development estimates."
+## "...hay mentiras, mentiras descaradas, y estimaciones de desarrollo de software"
 
 Software can only partially be designed in advance. ... requirements suffer from observation, that the act of building software causes the requirements to change. ...technical factors cannot be perfectly understood, that only the act of trying to build something with specific components will reveal all of the gotchas and who-knews associated with a chosen technology strategy. ...software design is an iterative process, starting with a best guess that is continually refined with experience.
 the normal case for software projects is that tasks are rarely completed exactly as estimated, but that as a project progresses, the aggregate variance from estimates falls.
@@ -238,39 +236,39 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 ## Sigue los principios de X
 
-* No añadir nueva funcionalidad a menos que un desarrollador no pueda completar una real aplicación sin ella.
+* No a&ntilde;adir nueva funcionalidad a menos que un desarrollador no pueda completar una real aplicaci&oacute;n sin ella.
 * Es tan importante decidir qué no es parte del sistema, como decidir que s&iacute; lo es. No respondas a las necesidades de todo el mundo; en lugar de eso, haz el sistema extensible para que las necesidades adicionales puedan cubrirse de una manera compatible ascendente.
-* La única cosa peor que generalizar a partir de un ejemplo, es generalizar a partir de ningún ejemplo.
-* Si un problema no es comprendido completamente, probablemente es mejor no proporcionar ninguna solución.
-* Si puedes conseguir el 90 por ciento del efecto deseado para el 10 por ciento del trabajo, utiliza la solución más simple.
-* Aísla la complejidad tanto como sea posible.
-* Proporcionen un mecanismo en vez de una política. En particular, pongan la interfaz de política en las manos de los clientes.
+* La &uacute;nica cosa peor que generalizar a partir de un ejemplo, es generalizar a partir de ning&uacute;n ejemplo.
+* Si un problema no es comprendido completamente, probablemente es mejor no proporcionar ninguna soluci&oacute;n.
+* Si puedes conseguir el 90 por ciento del efecto deseado para el 10 por ciento del trabajo, utiliza la soluci&oacute;n m&aacute;s simple.
+* A&iacute;sla la complejidad tanto como sea posible.
+* Proporcionen un mecanismo en vez de una pol&iacute;tica. En particular, pongan la interfaz de pol&iacute;tica en las manos de los clientes.
 
 [Fuente](http://en.wikipedia.org/wiki/X_Window_System_protocols_and_architecture#Design_principles)
 
 ## Sigue los principios de Unix
 
-"Esta es la filosof&iacute;a de Unix: Escribe programas que hacen una cosa y lo hagan bien. Write programs to work together. Write programs to handle text streams, because that is a universal interface"
+"Esta es la filosof&iacute;a de Unix: scribe programas que hagan una sola cosa y la hagan bien. Escribe programas para trabajar colectivamente. Escribe programas para manejar flujos de texto, porque esta es una interface universal."
 
 - Doug McIlroy, citado en A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
 
-* Rule of Modularity: Write simple parts connected by clean interfaces.
-* Rule of Clarity: Clarity is better than cleverness.
-* Rule of Composition: Design programs to be connected to other programs.
-* Rule of Separation: Separate policy from mechanism; separate interfaces from engines.
-* Rule of Simplicity: Design for simplicity; add complexity only where you must.
-* Rule of Parsimony: Write a big program only when it is clear by demonstration that nothing else will do.
-* Rule of Transparency: Design for visibility to make inspection and debugging easier.
-* Rule of Robustness: Robustness is the child of transparency and simplicity.
-* Rule of Representation: Fold knowledge into data so program logic can be stupid and robust.
-* Rule of Least Surprise: In interface design, always do the least surprising thing.
-* Rule of Silence: When a program has nothing surprising to say, it should say nothing.
-* Rule of Repair: When you must fail, fail noisily and as soon as possible.
-* Rule of Economy: Programmer time is expensive; conserve it in preference to machine time.
-* Rule of Generation: Avoid hand-hacking; write programs to write programs when you can.
-* Rule of Optimization: Prototype before polishing. Get it working before you optimize it.
-* Rule of Diversity: Distrust all claims for “one true way”.
-* Rule of Extensibility: Design for the future, because it will be here sooner than you think.
+* Regla de Modularidad: Escribe partes simples conectadas por interfaces limpias.
+* Regla de Claridad: La claridad es mejor que la habilidad y el ingenio.
+* Regla de Composici&oacute;n: Diseña programas para ser conectados a otros programas.
+* Regla de Separaci&oacute;n: Separa la pol&iacute;tica del mecanismo; separa las interfaces de los motores.
+* Regla de Simplicidad: Diseña pensando en la simplicidad; agrega complejidad solamente donde debas.
+* Regla de Parsimon&iacute;a: Escribe un programa grande solamente cuando es claro por demostraci&oacute;n que ninguna otra cosa funcionar&aacute;.
+* Regla de Transparencia: Diseña pensando en la visibilidad para hacer la inspecci&oacute;n y la depuraci&oacute;n m&aacute;s f&aacute;cil.
+* Regla de Robustez: La robustez es la hija de la transparencia y la simplicidad.
+* Regla de Representaci&oacute;n: Pliega el conocimiento dentro de los datos de tal manera que la l&oacute;gica del programa pueda ser estúpida y robusta.
+* Regla de la M&iacute;nima Sorpresa: En el diseño de interfaces, siempre has la cosa menos sorprendente.
+* Regla del Silencio: Cuando un programa no tiene nada sorprendente que decir, no deber&iacute;a decir nada.
+* Regla de Reparaci&oacute;n: Cuando debas fallar, falla ruidosamente y tan pronto como sea posible.
+* Regla de Econom&iacute;a: El tiempo del programador es costoso; consérvalo en preferencia al tiempo de m&aacute;quina.
+* Regla de Generaci&oacute;n: Evita el hackeo manual; escribe programas para escribir programas cuando puedas.
+* Regla de Optimizaci&oacute;n: Haz prototipos antes de pulir. Has que funcione antes que lo optimices.
+* Regla de Diversidad: Desconf&iacute;a de todas las pretensiones para "una v&iacute;a verdadera".
+* Regla de Extensibilidad: Diseña para el futuro, porque estar&aacute; aqu&iacute; m&aacute;s pronto de lo que piensas.
 
 – Eric S. Raymond, "The Art of Unix Programming"
 
