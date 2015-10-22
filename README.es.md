@@ -7,9 +7,9 @@ Utilice su propio juicio en su aplicaci&oacute;n.
 
 ## Nunca construyas aplicaciones grandes
 
-El secreto para construir aplicaciones grandes es nunca construir aplicaciones grandes. Rompe tus aplicaciones en piezas m&aacute;s peque&ntilde;as. Entonces, ensambla esas piezas del tama&ntilde;o de un mordizco que pueden ponerse a prueba, dentro de tu aplicaci&oacute;n grande.
+El secreto para construir aplicaciones grandes es nunca construir aplicaciones grandes. Divide tus aplicaciones en piezas m&aacute;s peque&ntilde;as. Entonces, ensambla esas piezas del tama&ntilde;o de un mordizco que pueden ponerse a prueba, dentro de tu aplicaci&oacute;n grande.
 
-- Justin Meyer, autor de *JavaScriptMVC*.
+*Justin Meyer, autor de JavaScriptMVC*.
 
 [Fuente](http://bitovi.com/blog/2010/11/organizing-a-jquery-application.html).
 
@@ -17,7 +17,7 @@ El secreto para construir aplicaciones grandes es nunca construir aplicaciones g
 
 Cuando escucho "¡S&Oacute;LO LIBERA DE UNA VEZ EL C&Oacute;DIGO QUE YA FUNCIONA!" pienso en todas las aplicaciones que dej&eacute; de usar porque gradualmente perdieron la habilidad de iterar.
 
-- Avdi Grimm
+*Avdi Grimm*
 
 [Fuente](https://twitter.com/#!/avdi/status/180747721852985344).
 
@@ -31,7 +31,7 @@ No escribas c&oacute;digo (escribe nuevo c&oacute;digo solamente cuando todo lo 
 
 "Odio el c&oacute;digo, y quiero tan poco c&oacute;digo como sea posible en nuestro producto."
 
-- Jack Diederich
+*Jack Diederich*
 
 [Fuente](http://pyvideo.org/video/880/stop-writing-classes)
 
@@ -43,9 +43,9 @@ El viejo dicho "No reinventes la rueda" no aplica cuando la rueda es del motor d
 
 ## Deja de escribir clases
 
-La se&ntilde;al de que "esto no deber&iacute;a ser una clase" es cuando la clase tiene dos m&eacute;todos, y uno de ellos es el constructor. Cualquier rato que veas estas se&ntilde;ales, significa que probablemente deber&iacute;as haber escrito s&oacute;lo una funci&oacute;n.
+La se&ntilde;al de que "esto no deber&iacute;a ser una clase" es cuando la clase tiene dos m&eacute;todos, y uno de ellos es el constructor. Cuando quiera que veas estas se&ntilde;ales, significa que probablemente deber&iacute;as haber escrito s&oacute;lo una funci&oacute;n.
 
-- Jack Diederich
+*Jack Diederich*
 
 [Fuente](http://pyvideo.org/video/880/stop-writing-classes)
 
@@ -53,7 +53,7 @@ La se&ntilde;al de que "esto no deber&iacute;a ser una clase" es cuando la clase
 
 El problema: es muy f&aacute;cil perder de vista lo que m&aacute;s importa a los usuarios, que es el rendimiento y la usabilidad de las aplicaciones y las funcionalidades que usan m&aacute;s a menudo.
 
-Tim Anderson
+*Tim Anderson*
 
 [Fuente](http://www.itjoblog.co.uk/2011/06/making-better-software.html)
 
@@ -72,7 +72,7 @@ Inventar tus propias ruedas te da un mayor aprecio y entendimiento de c&oacute;m
 * Si la implementaci&oacute;n es dif&iacute;cil de explicar, es una mala idea.
 * Si la implementaci&oacute;n es f&aacute;cil de explicar, puede que sea una buena idea.
 
-- El Zen de Python
+*El Zen de Python*
 
 [Fuente](http://www.python.org/dev/peps/pep-0020/)
 
@@ -86,14 +86,14 @@ Si vas a cambiar m&aacute;s del 25% de una clase o m&eacute;todo, considera simp
 
 1. El c&oacute;digo apesta
 2. "Ahora somos mucho m&aacute;s listos"
-3. Escogimos la plataforma/lenguaje equivocado
+3. Escogimos la plataforma y/o lenguaje equivocado
 
-#### Por qu&eacute; reescribir (casi) nunca es una buena idea 
+#### Por qu&eacute; (casi) nunca es buena idea reescribir
 
 1. [Tardar&aacute; m&aacute;s de lo que piensas](http://en.wikipedia.org/wiki/Hofstadter's_law)
 2. Los mercados cambian
 2. Los clientes existentes se frustran
-3. Refactorizar puede limpiar el c&oacute;digo
+3. Puedes limpiar el c&oacute;digo refactorizando
 4. No controlas la reescritura, ella te controla a ti
 
 [Fuente](http://onstartups.com/tabid/3339/bid/2596/Why-You-Should-Almost-Never-Rewrite-Your-Software.aspx)
@@ -102,7 +102,7 @@ Si vas a cambiar m&aacute;s del 25% de una clase o m&eacute;todo, considera simp
 
 La clave es reconocer desde el principio que no tienes idea de c&oacute;mo esto va a crecer. Cuando aceptes que no lo sabes todo, empezar&aacute;s a dise&ntilde;ar el sistema defensivamente... Deber&iacute;as invertir la mayor parte de tu tiempo en pensando en interfaces en vez de implementaciones.
 
-- Nicholas Zakas, autor de *High-performance JavaScript websites*
+*Nicholas Zakas, autor de "High-performance JavaScript websites"*
 
 [Fuente](http://radar.oreilly.com/2011/06/big-javascript-apps-teams.html)
 
@@ -120,7 +120,7 @@ Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. P
 
 [Fuente](http://junit.sourceforge.net/doc/testinfected/testing.htm)
 
-#### [Sin los tests unitarios] No est&aacute;s refactorizando, s&oacute;lo est&aacute;s cambiando mierda. — Hamlet D'Arcy
+#### [Sin las pruebas unitarias] no est&aacute;s refactorizando, s&oacute;lo est&aacute;s cambiando porquer&iacute;a. — Hamlet D'Arcy
 
 ## Para escribir pruebas unitarias efectivas, debes escribir c&oacute;digo que se pueda probar
 
@@ -155,17 +155,17 @@ Todo programador sabe que deber&iacute;a escribir tests para su c&oacute;digo. P
 #### Se&ntilde;ales de alerta
 
 * Al resumir lo que hace la clase se incluye el conector "y".
-* Class would be challenging for new team members to read and quickly “get it”
+* La clase ser&iacute;a dif&iacute;cil de leer y captar para nuevos miembros del equipo.
 * La clase tiene atributos que son utilizados s&oacute;lo en algunos m&eacute;todos.
-* Class has static methods that only operate on parameters
+* La clase tiene m&eacute;todos est&aacute;ticos que s&oacute;lo operan sobre p&aacute;rametros
 
 [Fuente](http://misko.hevery.com/code-reviewers-guide/)
 
 [Fuente](http://misko.hevery.com/presentations/)
 
-## Test-Driven Development with Inversion of Control.
+## Desarrollo guiado por pruebas con Inversi&oacute;n de Control
 
-Even if you aren't testing your code, you should write testable code. IoC enables testable code. Inject test-friendly dependencies or mocks at test time, to isolate the unit-under-test.
+Incluso si no est&aacute;s probando tu c&oacute;digo, deber&iacute;as escribir c&oacute;digo que pueda probarse. IoC permite c&oacute;digo "testeable". Inyecta dependencias que faciliten las pruebas o "mocks" al tiempo de probar a fin de aislar la unidad bajo prueba.
 
 ## Evita mezclar la creaci&oacute;n de objetos con la l&oacute;gica de aplicaci&oacute;n
 
@@ -173,13 +173,12 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 
 ## Evita crear deuda t&eacute;cnica
 
-"Although immature code may work fine and be completely acceptable to the customer, excess quantities will make a program unmasterable, leading to extreme specialization of programmers and finally an inflexible product. ... A little debt speeds development so long as it is paid back promptly with a rewrite ... *Every minute spent on not-quite-right code counts as interest on that [debt](http://en.wikipedia.org/wiki/Technical_debt
-).* Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation ...”
-(Emphasis mine)
+"Aunque el c&oacute;digo inmaduro funcione bien y sea totalmente aceptable al cliente, cantidades excesivas del mismo har&aacute;n que un programa sea indomable, conduciendo a programadores extremadamente especializados y, finalmente, a un producto inflexible. [...] Un poco de deuda acelera el desarrollo siempre y cuando se pague prontamente con una reescritura. [...] *Cada minuto que se gasta en c&oacute;digo no muy bien escrito cuenta como inter&eacute;s en esa [deuda](http://en.wikipedia.org/wiki/Technical_debt)*. Organizaciones enteras de ingenier&iacute;a pueden detenerse bajo la deuda de implementaci&oacute;n sin consolidar"
+(Cursivas m&iacute;as)
 
 [Fuente](http://c2.com/doc/oopsla92.html)
 
-## La optmizaci&oacute;n prematura es la ra&iacute;z de todos los males
+## La optimizaci&oacute;n prematura es la ra&iacute;z de todos los males
 
 "Los programadores desperdician mucha cantidad de tiempo pensando o preocup&aacute;ndose sobre el rendimiento de partes del programa que no son cr&iacute;ticas y estos intentos realmente tienen un poderoso impacto negativo cuando consideramos el mantenimiento y la depuraci&oacute;n. Deber&iacute;amos olvidarnos de las pequenas optimizaciones, digamos el 97% del tiempo: la optimizaci&oacute;n prematura es la ra&iacute;z de todos los males"
 
@@ -189,7 +188,7 @@ Even if you aren't testing your code, you should write testable code. IoC enable
 
 Es mucho m&aacute;s barato hacerlo correctamente la primera vez que rehacerlo posteriormente. Mientras m&aacute;s pronto se identifica y soluciona un problema, es m&aacute;s barato hacerlo.
 
-"El general que gana una batalla hace muchos c&aacute;lculos en su templo antes del fragor la batalla.   El general que pierde una batalla hace pocos c&aacute;lculos con antelaci&oacute;n. Hacer muchos c&aacute;lculos lleva a la victoria y pocos c&aacute;lculos a la derrota: ¡cu&aacute;nto m&aacute;s ning&uacute;n c&aacute;lculo en absoluto! Por atenci&oacute;n a este punto yo puedo preveer quien es probable que gane o pierda"
+"El general que gana una batalla hace muchos c&aacute;lculos en su templo antes del fragor la batalla.   El general que pierde una batalla hace pocos c&aacute;lculos con antelaci&oacute;n. Hacer muchos c&aacute;lculos lleva a la victoria y pocos c&aacute;lculos a la derrota: ¡cu&aacute;nto m&aacute;s ning&uacute;n c&aacute;lculo en absoluto! Por dar atenci&oacute;n a este punto yo puedo preveer quien es probable que gane o pierda"
 
 #### "Los planes son in&uacute;tiles, pero la planificaci&oacute;n lo es todo" - Sir Winston Churchill
 
@@ -200,13 +199,13 @@ For this to work, everyone involved has to listen, everyone has to be open, ever
 ... un equipo de programadores mediocres, sin experiencia que trabajan juntos y escriben para el beneficio del equipo tiene la capacidad de convertirse en un gran equipo, y pueden tomar este enfoque para crear otros grandes equipos. *Todo se resume en si el eqiupo ve su trabajo como s&oacute;lo escribir c&oacute;digo, o escribir con el objetivo de tanto codificar como aprender*"
 (Cursivas m&iacute;as)
 
-– Reginald Braithwaite
+*Reginald Braithwaite*
 
 [Fuente](http://www.theserverside.com/tt/articles/article.tss?l=ProgrammingisAlsoTeachingYourTeam)
 
-### "The most important element of successful software development is learning."
+### "El elemento m&aacute;s importante del desarrollo de software con &eacute;xito es aprender"
 
-When the entire team meets a certain standard for competence, there is a very large learning surface exposed and the team is able to absorb more information.
+Cuando todo el equipo alcanza un cierto nivel de competencia, existe una superficie expuesta de aprendizaje muy grande y el equipo es capaz de absorber m&aacute;s informaci&oacute;n.
 
 [Fuente](http://weblog.raganwald.com/2007/06/which-theory-first-evidence.html)
 
@@ -222,21 +221,21 @@ Good IT workers really don’t like saying “I don’t know.” If they say it,
 
 [![The mess we're in](https://cloud.githubusercontent.com/assets/43438/4344401/0ddd5fc8-408f-11e4-8887-b0bfbce91dc7.png)](https://www.youtube.com/watch?v=lKXe3HUG2l4)
 
-– Joe Armstrong, autor de Erlang
+*Joe Armstrong, autor de Erlang*
 
 ##Your architecture should resemble your domain
 
 So what does the architecture of your application scream? When you look at the top level directory structure, and the source files in the highest level package; do they scream: health care system, or accounting system, or inventory management system? Or do they scream: rails, or spring/hibernate, or asp?
 
-Architectures should not be supplied by frameworks. Frameworks are tools to be used, not architectures to be conformed to. If your architecture is based on frameworks, then it cannot be based on your use cases.
+La arquitectura no deber&iacute;a ser dada por el framework. Los frameworks son herramientas para utilizarlas, no arquitecturas a las que haya que conformarse. Si tu arquitectua est&aacute; basada en frameworks, entonces no puede estar basado en tus casos de uso.
 
-– Uncle Bob Martin, "Screaming Architecture"
+*Uncle Bob Martin, "Screaming Architecture"*
 
 [Fuente](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 
 ## Sigue los principios de X
 
-* No a&ntilde;adir nueva funcionalidad a menos que un desarrollador no pueda completar una real aplicaci&oacute;n sin ella.
+* No a&ntilde;adir nueva funcionalidad a menos que un desarrollador no pueda completar una aplicaci&oacute;n real sin ella.
 * Es tan importante decidir qué no es parte del sistema, como decidir que s&iacute; lo es. No respondas a las necesidades de todo el mundo; en lugar de eso, haz el sistema extensible para que las necesidades adicionales puedan cubrirse de una manera compatible ascendente.
 * La &uacute;nica cosa peor que generalizar a partir de un ejemplo, es generalizar a partir de ning&uacute;n ejemplo.
 * Si un problema no es comprendido completamente, probablemente es mejor no proporcionar ninguna soluci&oacute;n.
@@ -248,9 +247,9 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 
 ## Sigue los principios de Unix
 
-"Esta es la filosof&iacute;a de Unix: scribe programas que hagan una sola cosa y la hagan bien. Escribe programas para trabajar colectivamente. Escribe programas para manejar flujos de texto, porque esta es una interface universal."
+"Esta es la filosof&iacute;a de Unix: escribe programas que hagan una sola cosa y la hagan bien. Escribe programas para trabajar colectivamente. Escribe programas para manejar flujos de texto, porque esta es una interfaz universal."
 
-- Doug McIlroy, citado en A Quarter Century of Unix [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.
+*Doug McIlroy, citado en "A Quarter Century of Unix" [Salus]. Addison-Wesley. 1994. ISBN 0-201-54777-5.*
 
 * Regla de Modularidad: Escribe partes simples conectadas por interfaces limpias.
 * Regla de Claridad: La claridad es mejor que la habilidad y el ingenio.
@@ -266,11 +265,11 @@ Architectures should not be supplied by frameworks. Frameworks are tools to be u
 * Regla de Reparaci&oacute;n: Cuando debas fallar, falla ruidosamente y tan pronto como sea posible.
 * Regla de Econom&iacute;a: El tiempo del programador es costoso; consérvalo en preferencia al tiempo de m&aacute;quina.
 * Regla de Generaci&oacute;n: Evita el hackeo manual; escribe programas para escribir programas cuando puedas.
-* Regla de Optimizaci&oacute;n: Haz prototipos antes de pulir. Has que funcione antes que lo optimices.
+* Regla de Optimizaci&oacute;n: Haz prototipos antes de pulir. Haz que funcione antes que lo optimices.
 * Regla de Diversidad: Desconf&iacute;a de todas las pretensiones para "una v&iacute;a verdadera".
 * Regla de Extensibilidad: Diseña para el futuro, porque estar&aacute; aqu&iacute; m&aacute;s pronto de lo que piensas.
 
-– Eric S. Raymond, "The Art of Unix Programming"
+*Eric S. Raymond, "The Art of Unix Programming"*
 
 [Fuente](http://www.catb.org/esr/writings/taoup/html/ch01s06.html)
 
