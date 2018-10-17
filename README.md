@@ -235,7 +235,7 @@ Good IT workers really don’t like saying “I don’t know.” If they say it,
 
 – Joe Armstrong, author Erlang
 
-##Your architecture should resemble your domain
+## Your architecture should resemble your domain
 
 So what does the architecture of your application scream? When you look at the top level directory structure, and the source files in the highest level package; do they scream: health care system, or accounting system, or inventory management system? Or do they scream: rails, or spring/hibernate, or asp?
 
