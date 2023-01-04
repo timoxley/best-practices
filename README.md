@@ -118,7 +118,7 @@ The key is to acknowledge from the start that you have no idea how this will gro
 
 ## Avoid Code Smells
 
-[Source](http://www.codinghorror.com/blog/2006/05/code-smells.html)  
+[Source](https://blog.codinghorror.com/code-smells/)
 [Source](http://web.archive.org/web/20120130234037/http://stackoverflow.com/questions/114342/what-are-code-smells-what-is-the-best-way-to-correct-them)
 
 
