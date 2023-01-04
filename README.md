@@ -130,7 +130,7 @@ Programmers burn out from just such cycles.
 Breaking out requires an outside influence. We found the outside influence we needed in a simple testing framework that lets us do a little testing that
 makes a big difference.
 
-[Source](http://junit.sourceforge.net/doc/testinfected/testing.htm)
+- JUnit 3.8.x.
 
 
 #### [Without unit tests] You're not refactoring, you're just changing shit. — Hamlet D'Arcy
